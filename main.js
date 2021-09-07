@@ -216,16 +216,3 @@ document.addEventListener("keydown",function(ev){
 
 
 });
-
-//window.addEventListener("load",main);
-board_view.draw();
-window.requestAnimationFrame(controller);
-setTimeout(function(){
-  ball.direction = -2;
-},4000);
-
-function controller(){
-  board_view.play(); 
-  window.requestAnimationFrame(controller);
-
-}
